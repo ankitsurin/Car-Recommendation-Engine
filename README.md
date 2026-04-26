@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**1. What did you build and why? What did you deliberately cut?**
 
-## Getting Started
+I built a car recommendation engine to help users by categorizing their needs into different segments and providing personalized car suggestions based on their inputs. The system analyzes user preferences and displays the best matching options accordingly.
 
-First, run the development server:
+It also includes features such as car comparison between multiple selected models and an insights dashboard to understand current market trends and popular choices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Due to time constraints, I did not implement additional enhancements such as major UI improvements, multiple dedicated pages (like a car details page), or features like saving favorite cars.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**2. What’s your tech stack and why did you pick it?**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I chose Next.js for both frontend and backend because it provides a unified full-stack framework, making it easy to build and integrate both client-side UI and server-side APIs within the same project. It also offers seamless deployment, especially with platforms like Vercel, which makes the deployment process fast and straightforward.
 
-## Learn More
+I also used Supabase as the database because it provides a fully managed PostgreSQL backend with built-in authentication, real-time capabilities, and an easy-to-use API layer. It reduces backend complexity and allows faster development while still being scalable and production-ready.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**3. What did you delegate to AI tools vs. do manually? Where did the tools help most?
+Where did they get in the way?**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I delegated most of the code implementation to AI tools, and then iteratively refined and fine-tuned the generated output to match the project requirements. The AI assistance significantly accelerated development, making it easier to build and structure a full-stack application through continuous suggestions and code improvements.
 
-## Deploy on Vercel
+However, during debugging, there were instances where the AI repeatedly suggested similar solutions without identifying the root cause of certain issues. For example, it did not initially highlight that Tailwind CSS v4 could be unstable in my setup, which led to multiple configuration issues. I eventually resolved this by switching to a more stable version after troubleshooting.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Overall, AI support played a key role in speeding up development, while manual intervention was necessary for debugging and ensuring stability.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+**4. If you had another 4 hours, what would you add?**
+
+If I had an additional 4 hours, I would have expanded the project with several key enhancements to improve both functionality and user experience.
+
+I would have implemented a login system to allow users to securely access personalized features. This would enable storing and retrieving user-specific data such as past search history, making the experience more personalized and contextual over time.
+
+On the UI side, I would have improved the overall design with a more refined interface and added multiple filtering categories to provide better and more accurate car recommendations.
+
+Additionally, I would have introduced data visualization using graphs, derived from user inputs and car dataset trends, to help users better understand comparisons and insights.
+
+A dedicated car details page would have been added to show in-depth specifications, reviews, and comparisons for each vehicle.
+
+Finally, I would have integrated an LLM-based chatbot assistant to help users interact naturally with the system, ask questions, and receive guided recommendations in real time.
